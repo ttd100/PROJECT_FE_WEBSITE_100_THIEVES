@@ -22,6 +22,10 @@
     <span>{{name}}</span>
     <mat-icon color="accent" matPrefix>account_circle</mat-icon>
   </a>
+  <a  routerLink="category"  mat-button class="docs-button" aria-label="Angular Material">
+    <span>Category</span>
+    <mat-icon color="accent">category</mat-icon>
+  </a>
   <div class="flex-spacer"></div>
   <img *ngIf="checkLogin" style="width: 50px; height: 50px ; border-radius: 50%" src="{{avatar}}" alt="">
   <app-theme-picker></app-theme-picker>
@@ -37,4 +41,3 @@
       alt="">
   </a>
 </nav>
-<h1>category</h1>

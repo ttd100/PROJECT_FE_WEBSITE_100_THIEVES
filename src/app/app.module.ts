@@ -27,21 +27,24 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import { LoginComponent } from './form-login/login/login.component';
 import { ProfileComponent } from './profile/profile/profile.component';
+import { CategoryComponent } from './form-login/category/category.component';
 
 export const appRoutes: Routes = [
   { path: '', component: HomeComponent, data: { title: 'Home' } },
   {path: 'register', component: RegisterComponent},
-  {path:'login', component:LoginComponent},
-  {path:'profile', component:ProfileComponent},
+  {path: 'login', component: LoginComponent},
+  {path: 'profile', component: ProfileComponent},
   {
     path: 'guide/getting-started',
     component: GettingStartedComponent,
     data: { title: 'Getting Started' }
-  }
+  },
+  {path: 'category', component: CategoryComponent}
 ];
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, GettingStartedComponent, RegisterComponent, LoginComponent, ProfileComponent],
+  // tslint:disable-next-line:max-line-length
+  declarations: [AppComponent, HomeComponent, GettingStartedComponent, RegisterComponent, LoginComponent, ProfileComponent, CategoryComponent],
   imports: [
     HttpClientModule,
     BrowserModule,
